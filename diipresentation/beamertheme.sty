@@ -1,0 +1,50 @@
+\mode<presentation>
+
+% Imports
+\RequirePackage{array}
+
+\makeatletter
+  \def\beamer@calltheme#1#2#3{%
+    \def\beamer@themelist{#2}
+    \@for\beamer@themename:=\beamer@themelist\do
+    {\input{diipresentation/#3\beamer@themename.sty}}}
+
+% Settings
+\useinnertheme{diipresentation}
+\useoutertheme{diipresentation}
+\usecolortheme{diipresentation}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+
+% Header
+\setbeamertemplate{headline}{%
+\leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.7cm]{diibg} 
+    \newcolumntype{L}{>{\raggedright\arraybackslash}m{0.2\textwidth}}
+    \newcolumntype{C}{>{\centering\arraybackslash}m{0.6\textwidth}}
+    \newcolumntype{R}{>{\raggedleft\arraybackslash}m{0.1\textwidth}}
+    \begin{tabular}{LCR}
+      \includegraphics[]{diipresentation/dii-logo.png} &
+      \footnotesize \insertshorttitle &
+      \includegraphics[height=1cm]{diipresentation/unipi-logo.png}
+    \end{tabular}
+    \end{beamercolorbox}
+}
+
+% Footer
+\setbeamertemplate{footline}[text line]{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.2cm]{footer}
+    \newcolumntype{L}{>{\raggedright\arraybackslash}m{0.2\textwidth}}
+    \newcolumntype{C}{>{\centering\arraybackslash}m{0.6\textwidth}}
+    \newcolumntype{R}{>{\raggedleft\arraybackslash}m{0.2\textwidth}}
+    \begin{tabular}{LCR}
+      \insertshortauthor[width=0.2\textwidth] &
+      \insertshortdate[center, width=0.6\textwidth] &
+      \insertpagenumber/\insertmainframenumber
+    \end{tabular} 
+  \end{beamercolorbox}
+}
+
+
+\mode<all>

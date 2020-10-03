@@ -1,0 +1,32 @@
+\mode<presentation>
+
+% Title page
+
+\defbeamertemplate*{title page}{diipresentation}[1][]
+{
+    \vfill
+    \begin{figure}
+        \center
+        \includegraphics[width=.15\textwidth]{diipresentation/unipi-logo-white.png}
+    \end{figure}
+    \vspace{0.7cm}
+    \begin{beamercolorbox}[center,#1]{title page header}
+        \usebeamerfont{title}\textbf{\inserttitle}\par%
+    \end{beamercolorbox}
+    \vspace{0.2cm}
+    \begin{beamercolorbox}[center,#1]{subtitle}
+        \usebeamerfont{subtitle}\insertsubtitle\par%
+    \end{beamercolorbox}
+    \vspace{2.0cm}
+    \begin{beamercolorbox}[center,#1]{date}
+        \usebeamerfont{date}\insertdate\par%
+    \end{beamercolorbox}
+    \vspace{0.2cm}
+    \begin{beamercolorbox}[center,#1]{author}
+        \usebeamerfont{author}\insertauthor\par%
+    \end{beamercolorbox}
+    \vfill
+}
+
+\mode
+<all>

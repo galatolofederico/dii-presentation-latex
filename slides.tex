@@ -1,0 +1,126 @@
+\documentclass{beamer}
+ 
+\usepackage{fontawesome}
+\usepackage{graphicx} 
+\usepackage[utf8]{inputenc}
+\usepackage{subfigure}
+
+\usepackage{diipresentation/beamertheme}
+
+\setbeamertemplate{itemize subitem}[square]
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+\title{Dottorato di Ricerca in Ingegneria dell'Informazione}
+\subtitle{Ciclo XXXIV}
+\date{1st Year Activity Report}
+\author{Name Surname}
+
+\newcommand\Wider[2][10em]{
+\makebox[\linewidth][c]{
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}
+  }
+}
+
+\begin{document}
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Research activities in the current year}
+    Some description of your research
+    \hfill \\
+    \begin{itemize}
+        \item Some topic
+        \item Some other topic
+    \end{itemize}
+    \vfill
+    Some other stuff
+    \begin{description}
+        \item[description] More points
+        \item[other. desc] Another point 
+    \end{description}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Topic description}
+    Some topic description.\\
+    Here it is, arguably, the most beautiful formula of all times
+    $$
+    e^{i\pi} + 1 = 0
+    $$
+    Some other brilliant text
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Topic Results}
+    Some good topic results
+    \vfill
+    \begin{table}[]
+        \begin{tabular}{ccc}
+        \hline
+        Architecture & Complexity & Accuracy \\ \hline 
+        \textbf{My Architecture} & \textbf{3.190} & \textbf{96.50\%} $\mathbf{\pm}$ \textbf{0.05} \\   
+        My friend Architecture & 328.810 & 95.10\% $\pm$ 0.02 \\ 
+        SOTA Architecture & 3.360 & 94.30\% $\pm$ 0.01 \\ 
+        \end{tabular}
+        \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Formation}
+    Courses Summary:\\
+    \vspace{0.2cm}
+    \fontsize{7pt}{7.2}\selectfont 
+    \Wider{
+    \begin{description}
+        \item[3CFU Ext] Nice course 1
+        \item[3CFU Ext] Nice course 2
+        \item[3CFU Ext] Nice course 3
+        \item[5CFU Int] Nice course 4
+    \end{description}
+    }
+    \normalsize
+    \vfill
+    Total CFU:
+    \vspace{0.2cm}
+    \begin{description}
+        \item[External] 9 CFU
+        \item[Internal] 5 CFU
+        \item[]  
+        \item[Total] 14 CFU 
+    \end{description}  
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{This Year Publications}
+    \footnotesize{
+    \begin{thebibliography}{99} 
+        \bibitem{} Nice Conference Publication 1
+        \newblock Me, Myself, I
+        \newblock \emph{ The Best Conference Ever}
+
+        \bibitem{} Nice Journal Publication 1
+        \newblock Me, Myself, I
+        \newblock \emph{ The Best Journal Ever}
+    \end{thebibliography}
+    }
+\end{frame}
+
+\begin{frame}
+    \frametitle{Past Year Publications}
+    \footnotesize{
+    \begin{thebibliography}{99} 
+        \bibitem{} Great Publication 1
+        \newblock Me, I, Myself
+        \newblock \emph{ The Greatest Conference Ever}
+    \end{thebibliography}
+    }
+\end{frame}
+
+\end{document}
